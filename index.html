@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Slick</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>transition</h1>
+      </div>
+      <div class="wrapper">
+        <div class="slider">
+          <div class="slider-item">
+            <div class="card">
+              <ul class="social-networks">
+                <li><a class="twitter" href="#"><i class="icon-twitter icon"></i></a></li>
+                <li><a class="facebook" href="#"><i class="icon-facebook icon"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="icon-linkedin icon"></i></a></li>
+              </ul>
+              <img src="img/1.png" alt="1">
+              <div class="text">
+                <h3>Gloria Bromley</h3>
+                <h4>CEO and Founder</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <ul class="social-networks">
+                <li><a class="twitter" href="#"><i class="icon-twitter icon"></i></a></li>
+                <li><a class="facebook" href="#"><i class="icon-facebook icon"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="icon-linkedin icon"></i></a></li>
+              </ul>
+              <img src="img/2.png" alt="2">
+              <div class="text">
+                <h3>Paul Torres</h3>
+                <h4>Head of Development</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <ul class="social-networks">
+                <li><a class="twitter" href="#"><i class="icon-twitter icon"></i></a></li>
+                <li><a class="facebook" href="#"><i class="icon-facebook icon"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="icon-linkedin icon"></i></a></li>
+              </ul>
+              <img src="img/3.png" alt="3">
+              <div class="text">
+                <h3>Judith Gillette</h3>
+                <h4>Graphic Desinger</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <ul class="social-networks">
+                <li><a class="twitter" href="#"><i class="icon-twitter icon"></i></a></li>
+                <li><a class="facebook" href="#"><i class="icon-facebook icon"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="icon-linkedin icon"></i></a></li>
+              </ul>
+              <img src="img/4.png" alt="4">
+              <div class="text">
+                <h3>Delores Reed</h3>
+                <h4>Client Service Director</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $('.slider').slick({
+        infinite: true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              arrows: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              arrows: false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+              dots: true
+            }
+          },
+        ]
+
+      });
+
+    </script>
+  </body>
+
+</html>
